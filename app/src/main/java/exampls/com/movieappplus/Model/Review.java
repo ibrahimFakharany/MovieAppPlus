@@ -17,7 +17,7 @@ public class Review {
     }
 
     public String getReviewName() {
-
+        int i = 1;
         return reviewName;
     }
 }
