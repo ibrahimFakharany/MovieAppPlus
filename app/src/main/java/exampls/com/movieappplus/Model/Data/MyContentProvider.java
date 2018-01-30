@@ -55,7 +55,7 @@ public class MyContentProvider extends ContentProvider {
     @Override
     public Uri insert(Uri uri, ContentValues values) {
         SQLiteDatabase db = database.getWritableDatabase();
-        long i = db.insert(Contract.FavouritMoviesEntry.TABLE_NAME,null, values );
+        long i = db.insert(Contract.FavouritMoviesEntry.TABLE_NAME, null, values );
         getContext().getContentResolver().notifyChange(uri, null);
         return ContentUris.withAppendedId(Contract.CONTENT_URI, i);
 

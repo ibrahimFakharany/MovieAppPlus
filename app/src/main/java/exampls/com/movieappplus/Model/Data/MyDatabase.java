@@ -19,7 +19,7 @@ public class MyDatabase extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String create_statement = "create table " +Contract.FavouritMoviesEntry.TABLE_NAME +" ( "+
-                Contract.FavouritMoviesEntry._ID +"INTEGER PRIMARY KEY ,  "+
+                Contract.FavouritMoviesEntry._ID +" INTEGER PRIMARY KEY ,  "+
                 Contract.FavouritMoviesEntry.COLUMN_MOVIE_ID +" INTEGER NOT NULL , "+
                 Contract.FavouritMoviesEntry.COLUMN_TITLE + " TEXT NOT NULL , "+
                 Contract.FavouritMoviesEntry.COLUMN_POSTER_PATH+" TEXT NOT NULL );";
